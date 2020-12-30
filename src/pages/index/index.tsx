@@ -1,37 +1,40 @@
 // @ts-ignore
 import React from 'react'
-import { View, Text } from '@tarojs/components'
-import { AtButton } from 'taro-ui'
+import {View} from '@tarojs/components'
 import {connect} from "react-redux";
 import "taro-ui/dist/style/components/button.scss" // 按需引入
 import './index.scss'
-import {IndexState,IndexProps} from './index.Interface'
+import {IndexProps, IndexState} from './index.Interface'
 
-@connect(({index={}}) => ({
+@connect(({index = {}}) => ({
   index
 }))
- export default class Index extends React.Component<IndexProps,IndexState> {
-  state:IndexState;
-  props:IndexProps
-  constructor(props:IndexProps) {
+export default class Index extends React.Component<IndexProps, IndexState> {
+  state: IndexState;
+  props: IndexProps
+
+  constructor(props: IndexProps) {
     super(props);
-    this.state={
-
-    }
-  }
-  componentWillMount () { }
-
-  componentDidMount () {
-    console.log("props",this.props)
+    this.state = {}
   }
 
-  componentWillUnmount () { }
+  componentWillMount() {
+  }
 
-  componentDidShow () { }
+  componentDidMount() {
+    console.log("props", this.props)
+  }
 
-  componentDidHide () { }
+  componentWillUnmount() {
+  }
 
-  render () {
+  componentDidShow() {
+  }
+
+  componentDidHide() {
+  }
+
+  render() {
     return (
       <View className='index'>
 
