@@ -37,7 +37,7 @@ export default class Index extends React.Component<IndexProps, IndexState> {
   render() {
     return (
       <View className='index'>
-
+        首页
       </View>
     )
   }
