@@ -1,12 +1,15 @@
 // @ts-ignore
 import React from "react";
 import {IndexProps, IndexState} from "./square.Interface";
-import {Text} from "@tarojs/components";
-
+import {Text,View} from "@tarojs/components";
+import Sw from '../../component/sw/index'
 export default class Index extends React.Component<IndexProps, IndexState>{
   render() {
     return (
-      <Text>广场界面</Text>
+      <View>
+        <Sw/>
+      </View>
+
     )
   }
 }
